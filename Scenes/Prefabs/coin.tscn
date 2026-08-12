@@ -1,0 +1,43 @@
+[gd_scene format=3 uid="uid://bfmh3fm2de78o"]
+
+[ext_resource type="Script" uid="uid://cucxl5dsdevya" path="res://Scenes/Prefabs/coin.gd" id="1_mmtjo"]
+[ext_resource type="Texture2D" uid="uid://uofr2qu4ojd7" path="res://new folder/Gemini_Generated_Image_m2dga8m2dga8m2dg.png" id="2_mmtjo"]
+[ext_resource type="Texture2D" uid="uid://621as0fwjhum" path="res://Assets/Textures/star_07.png" id="3_i0ehq"]
+
+[sub_resource type="Curve" id="Curve_yh7uo"]
+_data = [Vector2(0, 0), 0.0, 0.0, 0, 0, Vector2(0.494709, 1), 0.0, 0.0, 0, 0, Vector2(1, 0), 0.0, 0.0, 0, 0]
+point_count = 3
+
+[sub_resource type="Gradient" id="Gradient_kkhmu"]
+offsets = PackedFloat32Array(0.625, 1)
+colors = PackedColorArray(0.914063, 0.734375, 0, 1, 1, 1, 1, 0)
+
+[node name="Coin" type="Area2D" unique_id=251510796]
+collision_mask = 3
+script = ExtResource("1_mmtjo")
+
+[node name="GemYellow" type="Sprite2D" parent="." unique_id=1955605895]
+position = Vector2(9.999996, 1.0000057)
+scale = Vector2(0.07741477, 0.06315105)
+texture = ExtResource("2_mmtjo")
+
+[node name="CoinSparkles" type="CPUParticles2D" parent="." unique_id=1908445367]
+amount = 10
+texture = ExtResource("3_i0ehq")
+lifetime = 2.0
+direction = Vector2(0, 0)
+spread = 180.0
+gravity = Vector2(0, 0)
+initial_velocity_max = 80.0
+damping_min = 0.5
+damping_max = 0.5
+scale_amount_min = 0.04
+scale_amount_max = 0.1
+scale_amount_curve = SubResource("Curve_yh7uo")
+color_ramp = SubResource("Gradient_kkhmu")
+
+[node name="CollisionPolygon2D2" type="CollisionPolygon2D" parent="." unique_id=463047178]
+position = Vector2(-14, -5)
+polygon = PackedVector2Array(23, -13, 23, -11.6, 20.9, -11, 18.1, -11, 9.1, -1, 7.3999996, -1, 5.5, 7, 4.700001, 7, 3.6000004, 9.299999, 11, 17.7, 11, 19.8, 20.9, 21, 33.1, 21, 35.1, 18, 36.6, 18, 40, 1.2000008, 40, -5, 32, -11, 32, -13)
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
