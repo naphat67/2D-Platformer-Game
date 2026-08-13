@@ -1,91 +1,122 @@
-# 2D Platformer Starter Kit
+# วิทยาลัยซอมบี้: KKU VIRUS
 
-This starter kit provides all the essential mechanics needed to build a complete 2D platformer game in Godot 4.7. It is designed as a hands-on learning resource for students taking the **Computer Game Development** course at the **College of Computing, Khon Kaen University**.
+**Zombie College: KKU VIRUS** — เกม 2D Platform แนว Survival/Zombie พัฒนาเป็นส่วนหนึ่งของวิชา Computer Game Development วิทยาลัยการคอมพิวเตอร์ มหาวิทยาลัยขอนแก่น
+
+ภาคการศึกษาต้น ปีการศึกษา 2569 · กลุ่มที่ 6
 
 ## Preview
-
-<img src="docs/qrcode.png" style="width:300px;" />
-
-- [Game Preview](https://computingkku.github.io/2D-Platformer-Starter-Kit/)
+![QR CODE](docs/qrcode.png)
 
 
-## Features
+![Cover Art](docs/cover.png)
 
-- **Game Menu** — A simple main menu scene (`Menu.tscn`) with Start and Exit options, so players can launch into the game or quit cleanly.
-- **Mobile & Web Design** — On-screen touch controls are included, allowing the game to be played on phones, tablets, and browsers without a keyboard.
-- **Platformer Controller** — Responsive horizontal movement and jumping with double jump support, configurable directly from the Godot Inspector.
-- **Weapon System** — Shoot fireball projectiles with physics-based bouncing and a configurable lifetime. Bullets can defeat enemies and add to the player's score.
-- **Enemy AI** — Enemies patrol the level, reverse direction on walls, and detect the player using raycasting. They can be defeated with bullets.
-- **Enemy Spawner** — A reusable spawner that generates enemies over time with configurable speed, respawn delay, and maximum instance limits.
-- **Animated Player** — Idle, walk, jump, and attack animations driven by state logic; sprite flips automatically based on movement direction.
-- **Particle Effects** — Running particle trails, death particles, and damage feedback (red flash) for juicier game feel.
-- **Damage & Health System** — Player takes damage on enemy contact with knockback and temporary invincibility frames. HP bar and life count are displayed in the UI.
-- **Save & Load** — Save and load game progress (position, score, lives, and settings) using JSON files.
-- **Sound & Music Toggle** — Persistent audio settings saved to a config file, with on-screen mute/unmute buttons.
-- **Score System** — Collect coins or defeat enemies to increase your score; UI updates in real time through the game manager.
-- **Demo Levels** — Two hand-crafted levels that introduce platformer design patterns and progressively challenge the player.
-- **Level Management** — Clean scene transitions between levels using an autoload transition manager.
-- **Beginner-Friendly Code** — Every script is documented and structured to be easy to read, modify, and extend.
+> ปี 3 AI ต้องฝ่าฝูง F
 
-## Getting Started
+## เนื้อเรื่องย่อ
 
-1. Open the project in [Godot 4.7](https://godotengine.org/) or later.
-2. Press **F5** or click **Play** to run the main menu.
-3. Use **A/D** or **Left/Right** to move, **Space** to jump, and **X** to shoot.
-4. On mobile or web, use the on-screen buttons at the bottom of the screen.
-5. Collect coins, defeat enemies, avoid traps, and reach the door to finish each level.
+สมเด็จเป็นนักศึกษามหาวิทยาลัยขอนแก่น คณะวิทยาลัยการคอม สาขา AI ชั้นปีที่ 3 ใช้ชีวิตตามปกติ จนกระทั่งวันหนึ่งอาจารย์คณะวิทยาศาสตร์ทำการทดลองไวรัสชื่อ `kku virus` โดยมีเป้าหมายให้นักศึกษาสามารถอ่านเปเปอร์ได้ทั้งวันโดยไม่หยุดพัก แต่มีนักศึกษาแอบนำอาหารเข้าห้องแล็บและทำเศษอาหารหล่นลงหลอดทดลอง ทำให้ไวรัสปนเปื้อนและกลายพันธุ์
 
-## Project Structure
+อาจารย์ที่ไม่รู้เรื่องทดลองกับตัวเองจนกลายเป็นซอมบี้ แล้วแพร่เชื้อต่อไปเรื่อย ๆ จนลามไปทั้งคณะ ส่วนสมเด็จตื่นสายและไม่ได้ล็อกอิน `kku.net` จึงไม่รู้เรื่องการระบาด เมื่อขับรถเข้ามาเรียนตามปกติ ก็พบว่าตัวเองติดอยู่ในตึกที่เต็มไปด้วยซอมบี้ และต้องพยายามฝ่าวงล้อมซอมบี้ออกไปให้ได้ก่อนที่ทหารจะเข้ามาทิ้งระเบิดกวาดล้าง
 
-```
-Scenes/
-├── Actors/           # Player, enemies, and spawners
-├── Levels/           # Level scenes, base level template, and UI
-├── Managers/         # GameManager, SceneTransition, AudioManager
-└── Prefabs/          # Reusable objects (bullet, coin, potion, door, button)
+## ตัวละคร
 
-Assets/
-├── Fonts/            # Custom fonts
-├── Icons/            # UI icons
-├── Sound/            # BGM and SFX
-├── Spritesheet/      # Character and tile sprites
-└── Textures/         # Particle and effect textures
-```
+### Samdech (สมเด็จ)
+นักศึกษามหาวิทยาลัยขอนแก่น คณะวิทยาลัยการคอม สาขา AI ชั้นปีที่ 3 ผู้ตื่นสายและต้องเอาชีวิตรอดจากซอมบี้
 
-## Controls
+![Samdech](docs/samdech.png)
 
-| Input | Action |
-|-------|--------|
-| A / Left Arrow | Move left |
-| D / Right Arrow | Move right |
-| Space / S | Jump |
-| X | Shoot |
-| On-screen buttons | Mobile and web touch controls |
+### ซอมบี้นักศึกษา
+นักศึกษาผู้โชคร้ายที่ติด `kku virus` — โจมตีระยะใกล้
 
-## Inspector Tips
+![ซอมบี้นักศึกษา](docs/zombie_student.png)
 
-- **Player**: Toggle `double_jump` to enable double jump. Adjust `move_speed`, `jump_force`, `shoot_cooldown_time`, and `bullet_lifetime` directly in the inspector.
-- **Enemy Spawner**: Configure `enemy_scenes`, `speed_range`, `respawn_time`, and `max_instance` to control enemy behavior and density.
-- **Bullet**: Adjust `speed` and `lifetime` to change projectile feel.
+### ซอมบี้อาจารย์
+อาจารย์ผู้ไม่รู้เรื่องและทดลองกับตัวเองจนกลายเป็นซอมบี้ — โจมตีระยะไกล ทำให้ผู้เล่นติดสถานะ F (เดินช้าลงและเสียพลังชีวิตต่อเนื่อง)
 
-## Saving
+![ซอมบี้อาจารย์](docs/zombie_professor.png)
 
-- Press the **Save** button in the top-right corner to save your progress.
-- The game saves the player's position, score, lives, and audio settings.
+### บอสลิฟต์
+ผู้เฝ้าลิฟต์ ถ้าเอาชนะได้จะสามารถลงลิฟต์ต่อไปได้
 
-## Credits
+![บอสลิฟต์](docs/boss_elevator.png)
 
-**Original Developer**
-- [AdilDevStuff](https://github.com/AdilDevStuff) — [2D-Platformer-Starter-Kit](https://github.com/AdilDevStuff/2D-Platformer-Starter-Kit)
+## รูปแบบการเล่นและกติกา
 
-**2D Assets**
-- [Kenney.nl](https://www.kenney.nl/)
-- [craftpix.net](https://craftpix.net/)
-- [Ravenmore](https://ravenmore.itch.io/)
-- [Icons8.com](https://icons8.com)
+- **รูปแบบเกม**: 2D Platform — ผู้เล่นควบคุมการวิ่ง กระโดด และต่อสู้กับซอมบี้เพื่อเอาชีวิตรอด
+- **เป้าหมาย**: จัดการกับซอมบี้ในแต่ละชั้นเพื่อผ่านด่าน
+- **ระบบนับเวลาถอยหลัง**: ผู้เล่นต้องทำภารกิจให้เสร็จภายในเวลาที่กำหนด หากไม่ทันจะแพ้ (Game Over)
 
-**Sound Effects**
-- GDFXR (Sfxr plugin for Godot)
+### การโจมตีของซอมบี้
+| ประเภท | รูปแบบการโจมตี | ผลกระทบ |
+|---|---|---|
+| ชนโดยตรง | ระยะประชิด | พลังชีวิตลดลง |
+| ซอมบี้นักศึกษา | ระยะใกล้ | พลังชีวิตลดลง |
+| ซอมบี้อาจารย์ | ระยะไกล | ติดสถานะ F (เดินช้าลง + เสียพลังชีวิตต่อเนื่อง) |
 
-**Modified for Educational Use By**
-- College of Computing, Khon Kaen University
+### ระบบไอเทม
+ผู้เล่นสามารถเก็บไอเทมต่าง ๆ เพื่อใช้โจมตีซอมบี้หรือฟื้นฟูพลังชีวิต โดยต้องเลือกใช้ให้เหมาะกับสถานการณ์:
+
+- **คีย์บอร์ด** — โจมตีระยะประชิด (ใช้เยอะระวังพัง)
+- **เมาส์** — โจมตีระยะไกล ใช้ได้ไม่จำกัด
+- **ขวดน้ำ** — เพิ่มพลังชีวิต
+
+### ด่านและความยาก
+| ชั้น | ความยาก |
+|---|---|
+| ชั้น 1 | ซอมบี้อาจารย์ + ซอมบี้นักศึกษา ปริมาณเยอะมาก |
+| ชั้น 2 | ซอมบี้อาจารย์ + ซอมบี้นักศึกษา จำนวนพอ ๆ กับชั้น 4 |
+| ชั้น 3 | มีแต่ซอมบี้อาจารย์ |
+| ชั้น 4 | ซอมบี้มากกว่าชั้น 5 แต่ยังไม่มีซอมบี้อาจารย์ |
+| ชั้น 5 | ซอมบี้ออกมาจำนวนไม่มาก |
+
+## แนวคิดการออกแบบ
+
+**กราฟิก**
+- สไตล์ไทย — ใช้สีสันหม่นหมอง ตัวละครและฉากออกแบบให้มีเอกลักษณ์
+- 2D Pixel Art — ให้ความรู้สึกคลาสสิกผสมผสานความทันสมัย
+- ฉากหลากหลาย แตกต่างกันในแต่ละชั้น
+
+**เสียง**
+- เพลงประกอบแนวสยองขวัญ ผสมผสานดนตรีสมัยใหม่
+- เสียงเอฟเฟกต์: เสียงธรรมชาติ เสียงซอมบี้ เสียงเครื่องบินทิ้งระเบิด
+- พากย์เสียงภาษาไทยเพื่อเพิ่มอรรถรสและความสมจริง
+
+**Level Assets**
+
+![School Hallway Assets](docs/level_assets.png)
+
+**เกมที่คล้ายกัน**: Contra
+
+## การวิเคราะห์ความสนุกของเกม (AGE Analysis)
+
+
+
+### แรงจูงใจในการเล่น
+- **การเอาชีวิตรอด** — การโจมตีของซอมบี้ ระบบนับเวลาถอยหลัง
+- **อยากสวมบทบาท** — รับบทตัวละครนักศึกษาที่ต้องเอาตัวรอด
+- **สะสมสิ่งของ / ความโลภ** — ระบบไอเทม
+- **การปกป้อง** — ช่วยกำจัดซอมบี้ รักษาไม่ให้ติดเกรด F
+- **การสื่อสาร** — ระบบอินเทอร์เน็ตในเกม
+- **ชอบสีสัน** — ฉากและตัวละครโทนมืดมน เหมาะกับผู้ชอบยิงซอมบี้
+- **สำรวจ** — มีด่านที่หลากหลาย
+- **ก้าวร้าว** — ระบบต่อสู้กำจัดซอมบี้
+- **ความแค้น** — "แค้นฝัง F": ความกดดันจากการเรียน ความกลัวสอบตก และความรู้สึกล้มเหลวจากเกรด F ที่กลายเป็นแรงขับให้ซอมบี้ไล่ล่าสมเด็จ
+- **แข่งขัน** — ระบบเวลา
+
+## ประโยชน์ของเกม
+
+เกมนี้ต้องการสื่อถึงปัญหาการละเลยกฎความปลอดภัยในห้องแล็บ ซึ่งเป็นปัญหาที่มีมาตั้งแต่อดีตจนถึงปัจจุบัน โดยใช้เนื้อเรื่องสร้างความตระหนักรู้ให้ผู้เล่นเห็นว่าการละเลยกฎความปลอดภัยอาจส่งผลเสียต่อคนรอบข้างได้
+
+## กลุ่มเป้าหมาย
+
+คนรักซอมบี้ — เกมที่มีเนื้อหาเกี่ยวกับซอมบี้
+
+## จัดทำโดย
+
+กลุ่มที่ 6 · วิชา Computer Game Development CP410844
+วิทยาลัยการคอมพิวเตอร์ มหาวิทยาลัยขอนแก่น
+
+1. 673380354-9 นายอภิมุข เพียสักขา
+2. 673380076-1 นายณภัทร โสดาดง
+3. 673380309-4 นายจักรภัทร เอี่ยมเสริม
+4. 673380358-1 นางสาวเตชินี ถามูลตรี
