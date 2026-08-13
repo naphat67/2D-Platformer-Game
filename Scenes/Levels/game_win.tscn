@@ -2,14 +2,17 @@
 
 [ext_resource type="Theme" uid="uid://d3eng5cvycmjf" path="res://Scenes/Prefabs/theme.tres" id="1_5l1gm"]
 [ext_resource type="PackedScene" uid="uid://puc4l62gx6et" path="res://Scenes/Prefabs/button_exit.tscn" id="2_81byk"]
+[ext_resource type="Texture2D" uid="uid://b4oqj1vsktj0q" path="res://pok.png" id="3_5l1gm"]
+
+[sub_resource type="Theme" id="Theme_4nn8d"]
 
 [node name="GameOver" type="Node2D" unique_id=826370530]
 
 [node name="Title" type="Label" parent="." unique_id=1965507633]
-offset_left = 438.0
-offset_top = 225.0
-offset_right = 742.0
-offset_bottom = 269.0
+offset_left = 429.0
+offset_top = 253.0
+offset_right = 733.0
+offset_bottom = 297.0
 theme = ExtResource("1_5l1gm")
 theme_override_colors/font_color = Color(0.36862746, 0.9137255, 0.1882353, 1)
 theme_override_colors/font_outline_color = Color(1, 1, 1, 1)
@@ -20,16 +23,24 @@ horizontal_alignment = 1
 vertical_alignment = 1
 
 [node name="btnExit" parent="." unique_id=1633606001 instance=ExtResource("2_81byk")]
-offset_left = 438.0
-offset_top = 359.0
-offset_right = 564.0
-offset_bottom = 413.0
+offset_left = 433.0
+offset_top = 412.0
+offset_right = 559.0
+offset_bottom = 466.0
 text = "Exit to Menu"
 
 [node name="btnPlay" parent="." unique_id=1146872882 instance=ExtResource("2_81byk")]
-offset_left = 597.0
-offset_top = 359.0
-offset_right = 723.0
-offset_bottom = 413.0
+offset_left = 605.0
+offset_top = 415.0
+offset_right = 731.0
+offset_bottom = 469.0
+theme = SubResource("Theme_4nn8d")
 shortcut = null
 text = "Play Again"
+
+[node name="Pok" type="Sprite2D" parent="." unique_id=1321155078]
+z_index = -1
+position = Vector2(574, 323.50006)
+scale = Vector2(0.7437056, 0.6374385)
+texture = ExtResource("3_5l1gm")
+metadata/_edit_lock_ = true

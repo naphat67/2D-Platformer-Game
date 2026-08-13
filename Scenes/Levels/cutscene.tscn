@@ -1,0 +1,27 @@
+[gd_scene format=3 uid="uid://c1e613va8fi4f"]
+
+[ext_resource type="Script" uid="uid://bchgd0ouwd4vf" path="res://Scenes/Levels/cutscene.gd" id="1_8vcau"]
+[ext_resource type="Texture2D" uid="uid://n7d77uxwt1l7" path="res://new folder/intro_scene_1_lab_accident.jpg" id="1_ix241"]
+[ext_resource type="Texture2D" uid="uid://dlsw30ih4m833" path="res://new folder/intro_scene_2_instructor_mutation.jpg" id="3_3q24f"]
+[ext_resource type="Texture2D" uid="uid://cygdbfcxe0dm0" path="res://new folder/intro_scene_3_campus_outbreak-v2.jpg" id="4_8ye5a"]
+[ext_resource type="Texture2D" uid="uid://ccodqb8u2ojon" path="res://new folder/intro_scene_4_samdech_sleeping.jpg" id="5_qcoa3"]
+[ext_resource type="Texture2D" uid="uid://xackx1fpmirb" path="res://new folder/intro_scene_5_danger_zone-v3.jpg" id="6_pvbl2"]
+[ext_resource type="Texture2D" uid="uid://cf7tygaxqaktd" path="res://new folder/intro_scene_6_computer_room.jpg" id="7_vi1t0"]
+[ext_resource type="PackedScene" uid="uid://dekkdb3a0eifd" path="res://Scenes/Levels/level_01.tscn" id="8_1titf"]
+
+[node name="Cutscene" type="Control" unique_id=572762850]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 1155.0
+offset_bottom = 648.0
+script = ExtResource("1_8vcau")
+cutscene_images = Array[Texture2D]([ExtResource("1_ix241"), ExtResource("3_3q24f"), ExtResource("4_8ye5a"), ExtResource("5_qcoa3"), ExtResource("6_pvbl2"), ExtResource("7_vi1t0")])
+next_scene = ExtResource("8_1titf")
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=1205249439]
+layout_mode = 0
+offset_right = 1152.0
+offset_bottom = 645.0
+texture = ExtResource("1_ix241")
+expand_mode = 1
+stretch_mode = 6

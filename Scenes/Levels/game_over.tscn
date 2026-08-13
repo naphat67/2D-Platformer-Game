@@ -2,6 +2,7 @@
 
 [ext_resource type="PackedScene" uid="uid://puc4l62gx6et" path="res://Scenes/Prefabs/button_exit.tscn" id="2_buq0o"]
 [ext_resource type="Theme" uid="uid://d3eng5cvycmjf" path="res://Scenes/Prefabs/theme.tres" id="2_chlux"]
+[ext_resource type="Texture2D" uid="uid://o6y3ihae4hoy" path="res://new folder/credit_background.png" id="3_5lehs"]
 
 [node name="GameOver" type="Node2D" unique_id=826370530]
 
@@ -33,3 +34,10 @@ offset_right = 723.0
 offset_bottom = 413.0
 shortcut = null
 text = "Play Again"
+
+[node name="CreditBackground" type="Sprite2D" parent="." unique_id=1058542550]
+z_index = -1
+position = Vector2(579, 324.49997)
+scale = Vector2(0.37017995, 0.47991064)
+texture = ExtResource("3_5lehs")
+metadata/_edit_lock_ = true

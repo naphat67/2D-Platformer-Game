@@ -1,0 +1,128 @@
+[gd_scene format=4 uid="uid://dg1phv1244omh"]
+
+[ext_resource type="PackedScene" uid="uid://bjntpxb1c8jxn" path="res://Scenes/Levels/base_level.tscn" id="1_bw0cu"]
+[ext_resource type="PackedScene" uid="uid://b46lxwc5r3dy4" path="res://Scenes/Levels/game_win.tscn" id="2_bw0cu"]
+[ext_resource type="TileSet" uid="uid://bvk6vx5i1riqd" path="res://Scenes/Prefabs/ground_tile_set.tres" id="3_lpnrq"]
+[ext_resource type="PackedScene" uid="uid://bp4l1nlnh8oq1" path="res://Scenes/Prefabs/trap_2.tscn" id="5_3cvb6"]
+[ext_resource type="PackedScene" uid="uid://dabag2r57aued" path="res://Scenes/Prefabs/heal_potion.tscn" id="6_jidr4"]
+[ext_resource type="PackedScene" uid="uid://bfmh3fm2de78o" path="res://Scenes/Prefabs/coin.tscn" id="7_v3hwm"]
+[ext_resource type="PackedScene" uid="uid://b48s52q3f64kl" path="res://Scenes/Actors/monster_mushroom.tscn" id="8_n60c5"]
+[ext_resource type="Theme" uid="uid://d3eng5cvycmjf" path="res://Scenes/Prefabs/theme.tres" id="8_vhd1q"]
+[ext_resource type="Texture2D" uid="uid://bneb6mh1qfuik" path="res://new folder/inside_lift.png" id="9_vhd1q"]
+[ext_resource type="Texture2D" uid="uid://cyxrb7ktee7qq" path="res://new folder/Screenshot 2026-08-13 140033.png" id="10_ofov5"]
+
+[node name="BaseLevel" unique_id=1997201631 instance=ExtResource("1_bw0cu")]
+
+[node name="LevelFinishDoor" parent="." index="0" unique_id=1788542095]
+z_index = -1
+position = Vector2(2193, 256)
+scale = Vector2(2, 2)
+next_scene = ExtResource("2_bw0cu")
+
+[node name="Background1" parent="Level" parent_id_path=PackedInt32Array(1752500785) index="0" unique_id=1072429833]
+metadata/_edit_lock_ = true
+
+[node name="Ground" type="TileMapLayer" parent="Level" parent_id_path=PackedInt32Array(1752500785) index="1" unique_id=647673462]
+use_parent_material = true
+tile_map_data = PackedByteArray("AAANAAcAAAADAAEAAAAOAAcAAAADAAEAAAAPAAcAAAADAAEAAAAQAAcAAAADAAEAAAD//wYAAAADAAEAAAARAAcAAAADAAEAAAASAAcAAAADAAEAAAATAAcAAAADAAEAAAAUAAcAAAADAAEAAAAVAAcAAAADAAEAAAAWAAcAAAADAAEAAAAXAAcAAAADAAEAAAAMAAcAAAADAAEAAAALAAcAAAADAAEAAAAKAAcAAAADAAEAAAAJAAcAAAADAAEAAAAAAAYAAAADAAEAAAABAAYAAAADAAEAAAACAAYAAAADAAEAAAD+/wUAAAADAAEAAAD+/wYAAAADAAEAAAD+/wQAAAADAAEAAAD+/wMAAAADAAEAAAD+/wIAAAADAAEAAAD+/wEAAAADAAEAAAAIAAcAAAADAAEAAAAMAAYAAAADAAEAAAANAAYAAAADAAEAAAAOAAYAAAADAAEAAAAWAAYAAAADAAEAAAAXAAYAAAADAAEAAAD+/wcAAAADAAEAAAD//wcAAAADAAEAAAAAAAcAAAADAAEAAAABAAcAAAADAAEAAAACAAcAAAADAAEAAAADAAcAAAADAAEAAAAEAAcAAAADAAEAAAAFAAcAAAADAAEAAAAGAAcAAAADAAEAAAAHAAcAAAADAAEAAAAYAAcAAAADAAEAAAAZAAcAAAADAAEAAAAaAAcAAAADAAEAAAAbAAcAAAADAAEAAAAcAAcAAAADAAEAAAAdAAcAAAADAAEAAAAeAAcAAAADAAEAAAAfAAcAAAADAAEAAAAgAAcAAAADAAEAAAAhAAcAAAADAAEAAAAiAAcAAAADAAEAAAAjAAcAAAADAAEAAAAkAAcAAAADAAEAAAAlAAcAAAADAAEAAAAmAAcAAAADAAEAAAAnAAcAAAADAAEAAAAsAAcAAAADAAEAAAArAAcAAAADAAEAAAAqAAcAAAADAAEAAAApAAcAAAADAAEAAAAoAAcAAAADAAEAAAADAAYAAAADAAEAAAAEAAYAAAADAAEAAAAFAAYAAAADAAEAAAAGAAYAAAADAAEAAAAHAAYAAAADAAEAAAAIAAYAAAADAAEAAAAJAAYAAAADAAEAAAAKAAYAAAADAAEAAAALAAYAAAADAAEAAAAPAAYAAAADAAEAAAAQAAYAAAADAAEAAAARAAYAAAADAAEAAAASAAYAAAADAAEAAAATAAYAAAADAAEAAAAUAAYAAAADAAEAAAAVAAYAAAADAAEAAAAYAAYAAAADAAEAAAAZAAYAAAADAAEAAAAaAAYAAAADAAEAAAAbAAYAAAADAAEAAAAcAAYAAAADAAEAAAAdAAYAAAADAAEAAAAeAAYAAAADAAEAAAAfAAYAAAADAAEAAAAgAAYAAAADAAEAAAAhAAYAAAADAAEAAAAiAAYAAAADAAEAAAAjAAYAAAADAAEAAAAkAAYAAAADAAEAAAAlAAYAAAADAAEAAAAmAAYAAAADAAEAAAAnAAYAAAADAAEAAAAoAAYAAAADAAEAAAApAAYAAAADAAEAAAAqAAYAAAADAAEAAAArAAYAAAADAAEAAAAsAAYAAAADAAEAAAAtAAYAAAADAAEAAAAtAAcAAAADAAEAAAAtAAUAAAADAAEAAAAtAAQAAAADAAEAAAAtAAMAAAADAAEAAAAtAAIAAAADAAEAAAAtAAEAAAADAAEAAAAtAAAAAAADAAEAAAD+/wAAAAADAAEAAAD9/wAAAAADAAEAAAD9/wEAAAADAAEAAAD9/wIAAAADAAEAAAD9/wMAAAADAAEAAAD9/wQAAAADAAEAAAD9/wUAAAADAAEAAAD9/wYAAAADAAEAAAD9/wcAAAADAAEAAAA=")
+tile_set = ExtResource("3_lpnrq")
+
+[node name="Background2" parent="Level" parent_id_path=PackedInt32Array(1752500785) index="2" unique_id=1070008654]
+metadata/_edit_lock_ = true
+
+[node name="Trap3" parent="Level" parent_id_path=PackedInt32Array(1752500785) index="3" unique_id=1894763376 instance=ExtResource("5_3cvb6")]
+z_index = 1
+position = Vector2(669, 157)
+
+[node name="Trap4" parent="Level" parent_id_path=PackedInt32Array(1752500785) index="4" unique_id=1970758885 instance=ExtResource("5_3cvb6")]
+position = Vector2(1821, 167)
+rotation = 4.712389
+
+[node name="HealPotion" parent="Coins" parent_id_path=PackedInt32Array(1530662565) index="0" unique_id=1169891267 instance=ExtResource("6_jidr4")]
+position = Vector2(1876, 325)
+
+[node name="Coin" parent="Coins" parent_id_path=PackedInt32Array(1530662565) index="1" unique_id=251510796 instance=ExtResource("7_v3hwm")]
+position = Vector2(454.99997, 295.99997)
+rotation = 0.2617994
+
+[node name="Coin2" parent="Coins" parent_id_path=PackedInt32Array(1530662565) index="2" unique_id=959644230 instance=ExtResource("7_v3hwm")]
+position = Vector2(455, 342)
+
+[node name="Coin3" parent="Coins" parent_id_path=PackedInt32Array(1530662565) index="3" unique_id=1453669841 instance=ExtResource("7_v3hwm")]
+position = Vector2(881, 267)
+
+[node name="Coin4" parent="Coins" parent_id_path=PackedInt32Array(1530662565) index="4" unique_id=941174960 instance=ExtResource("7_v3hwm")]
+position = Vector2(927, 267)
+
+[node name="Enemy3" parent="Enemies" parent_id_path=PackedInt32Array(1580630701) index="0" unique_id=265544775 instance=ExtResource("8_n60c5")]
+position = Vector2(370, 383)
+scale = Vector2(1.5, 1.5)
+speed = 50.0
+
+[node name="Enemy4" parent="Enemies" parent_id_path=PackedInt32Array(1580630701) index="1" unique_id=600502477 instance=ExtResource("8_n60c5")]
+z_index = 1
+position = Vector2(787, 389.00006)
+scale = Vector2(1.5, 1.5)
+speed = 50.0
+
+[node name="Enemy5" parent="Enemies" parent_id_path=PackedInt32Array(1580630701) index="2" unique_id=1942410680 instance=ExtResource("8_n60c5")]
+z_index = 1
+position = Vector2(969, 373)
+scale = Vector2(1.5, 1.5)
+speed = 50.0
+
+[node name="Enemy6" parent="Enemies" parent_id_path=PackedInt32Array(1580630701) index="3" unique_id=74982968 instance=ExtResource("8_n60c5")]
+z_index = 1
+position = Vector2(1330, 378)
+scale = Vector2(1.5, 1.5)
+speed = 50.0
+
+[node name="Enemy7" parent="Enemies" parent_id_path=PackedInt32Array(1580630701) index="4" unique_id=368099796 instance=ExtResource("8_n60c5")]
+z_index = 1
+position = Vector2(1147.0001, 374)
+scale = Vector2(1.5, 1.5)
+speed = 50.0
+
+[node name="Label" parent="UserInterface" parent_id_path=PackedInt32Array(1799764374) index="1" unique_id=1103718868]
+offset_left = -99.0
+offset_top = -39.5
+offset_right = 99.0
+offset_bottom = 39.5
+theme_override_colors/font_color = Color(0.5529412, 0.38431373, 1, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 10
+text = "Level 3 Boss room"
+horizontal_alignment = 1
+
+[node name="Text2" type="Node2D" parent="." index="7" unique_id=967533731]
+
+[node name="Label2" type="Label" parent="Text2" index="0" unique_id=526936957]
+offset_left = 2054.0
+offset_top = 273.0
+offset_right = 2311.0
+offset_bottom = 324.0
+theme = ExtResource("8_vhd1q")
+text = "มากดกดลิฟต์ตรงนี้"
+metadata/_edit_use_anchors_ = true
+
+[node name="InsideLift" type="Sprite2D" parent="." index="9" unique_id=426327807]
+z_index = -1
+position = Vector2(1406, 200)
+scale = Vector2(1.0686773, 0.2408854)
+texture = ExtResource("9_vhd1q")
+metadata/_edit_lock_ = true
+
+[node name="Screenshot20260813140033" type="Sprite2D" parent="." index="10" unique_id=1516026163]
+position = Vector2(891, 97.00001)
+scale = Vector2(0.37090686, 0.31303725)
+texture = ExtResource("10_ofov5")
+
+[node name="Screenshot20260813140034" type="Sprite2D" parent="." index="11" unique_id=986029080]
+position = Vector2(1342.0001, 98)
+scale = Vector2(0.36398, 0.33094558)
+texture = ExtResource("10_ofov5")
+
+[node name="Screenshot20260813140035" type="Sprite2D" parent="." index="12" unique_id=397707449]
+position = Vector2(1706.9999, 99.99999)
+scale = Vector2(0.37934044, 0.37118414)
+texture = ExtResource("10_ofov5")

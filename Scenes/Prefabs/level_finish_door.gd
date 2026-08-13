@@ -7,5 +7,5 @@ extends Area2D
 func _on_body_entered(body):
 	if body.is_in_group("Player") && next_scene != null:
 		AudioManager.level_complete_sfx.play()
-		#SceneTransition.load_scene(next_scene)
-		get_tree().change_scene_to_file("res://Scenes/Levels/game_win.tscn")
+		SceneTransition.load_scene(next_scene)
+		#get_tree().change_scene_to_file("res://Scenes/Levels/game_win.tscn")

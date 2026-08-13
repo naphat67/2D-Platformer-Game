@@ -3,6 +3,7 @@
 [ext_resource type="Theme" uid="uid://d3eng5cvycmjf" path="res://Scenes/Prefabs/theme.tres" id="1_2g1tp"]
 [ext_resource type="Texture2D" uid="uid://1ay25i0wdihg" path="res://Assets/Icons/cpkku_dark.png" id="2_fnvqj"]
 [ext_resource type="PackedScene" uid="uid://puc4l62gx6et" path="res://Scenes/Prefabs/button_exit.tscn" id="3_fnvqj"]
+[ext_resource type="Texture2D" uid="uid://bnkdcvdhqwch5" path="res://new folder/credit_background_v2.png" id="4_4nn8d"]
 
 [node name="Node2D" type="Node2D" unique_id=264957255]
 
@@ -13,7 +14,7 @@ offset_right = 1154.0
 offset_bottom = 650.0
 
 [node name="CpkkuDark" type="Sprite2D" parent="Control" unique_id=813724852]
-position = Vector2(584, 71)
+position = Vector2(578, 101)
 texture = ExtResource("2_fnvqj")
 
 [node name="Title" type="Label" parent="Control" unique_id=1640205557]
@@ -40,10 +41,10 @@ layout_mode = 1
 anchors_preset = 5
 anchor_left = 0.5
 anchor_right = 0.5
-offset_left = -167.0
-offset_top = 177.0
-offset_right = 207.0
-offset_bottom = 209.0
+offset_left = -172.0
+offset_top = 248.0
+offset_right = 208.0
+offset_bottom = 295.0
 grow_horizontal = 2
 theme = ExtResource("1_2g1tp")
 theme_override_constants/outline_size = 10
@@ -56,17 +57,19 @@ vertical_alignment = 1
 [node name="btnExit" parent="Control" unique_id=1633606001 instance=ExtResource("3_fnvqj")]
 layout_mode = 0
 offset_left = 33.0
+offset_top = 0.0
 offset_right = 159.0
+offset_bottom = 54.0
 
 [node name="Title3" type="Label" parent="Control" unique_id=1657901293]
 layout_mode = 1
 anchors_preset = 5
 anchor_left = 0.5
 anchor_right = 0.5
-offset_left = -148.0
-offset_top = 129.0
-offset_right = 153.0
-offset_bottom = 161.0
+offset_left = -267.0
+offset_top = 213.0
+offset_right = 283.0
+offset_bottom = 245.0
 grow_horizontal = 2
 theme = ExtResource("1_2g1tp")
 theme_override_constants/outline_size = 10
@@ -88,8 +91,15 @@ grow_horizontal = 2
 theme = ExtResource("1_2g1tp")
 theme_override_constants/outline_size = 10
 theme_override_font_sizes/font_size = 16
-text = "1. 
-2.
-3.
-4."
+text = "1.  673380354-9      นายอภิมุข เพียสักขา
+2.  673380076-1      นายณภัทร โสดาดง
+3.  673380309-4     นายจักรภัทร เอี่ยมเสริม
+4.  673380358-1      นางสาวเตชินี ถามูลตรี"
 vertical_alignment = 1
+
+[node name="CreditBackgroundV2" type="Sprite2D" parent="." unique_id=2120140098]
+z_index = -1
+position = Vector2(577, 324.5)
+scale = Vector2(1.1210938, 0.61621094)
+texture = ExtResource("4_4nn8d")
+metadata/_edit_lock_ = true

@@ -18,6 +18,13 @@ func _process(delta: float) -> void:
 func _on_btn_start_pressed() -> void:
 	DisplayServer.window_set_mode(DisplayServer.WINDOW_MODE_EXCLUSIVE_FULLSCREEN)
 	GameManager.restart()
+	SceneTransition.load_scene(preload("res://Scenes/Levels/cutscene.tscn"))
+	#DisplayServer.window_set_mode(DisplayServer.WINDOW_MODE_EXCLUSIVE_FULLSCREEN)
+	#GameManager.restart()
+	
+	
+	
+	
 
 
 func _on_btn_option_pressed() -> void:
