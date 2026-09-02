@@ -32,11 +32,11 @@ func restart():
 	get_tree().change_scene_to_file("res://Scenes/Levels/level_01.tscn")
 
 
-func damage(val=1):
+func damage(val=15):
 	hp = hp - val
 	if hp <=0 :
 		death()
-func add_hp(val=1):
+func add_hp(val=20):
 	hp = hp + val
 	if hp >max_hp:
 		hp = max_hp

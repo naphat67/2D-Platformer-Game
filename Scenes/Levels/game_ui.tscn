@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://cdwabmqtlxr1y"]
 
 [ext_resource type="Script" uid="uid://domyi75bwl5ad" path="res://Scenes/Levels/game_ui.gd" id="1_6pfiu"]
-[ext_resource type="FontFile" uid="uid://qgc4vi5osk7v" path="res://Assets/Fonts/Star Choco.ttf" id="3_4yslr"]
+[ext_resource type="FontFile" uid="uid://bnwueb1457rus" path="res://Assets/Fonts/Star Choco.ttf" id="3_4yslr"]
 [ext_resource type="Theme" uid="uid://d3eng5cvycmjf" path="res://Scenes/Prefabs/theme.tres" id="4_fjdxc"]
 [ext_resource type="Texture2D" uid="uid://2wfiy300hbbt" path="res://Assets/Icons/icons8-save-50.png" id="5_fpocv"]
 [ext_resource type="Texture2D" uid="uid://ddv4aoj15q5pe" path="res://Assets/Icons/icons8-audio-48.png" id="6_da6bi"]
@@ -12,7 +12,7 @@
 [ext_resource type="Texture2D" uid="uid://cs52s37v04q41" path="res://Assets/Icons/icons8-heart-48.png" id="9_nvrsl"]
 [ext_resource type="Texture2D" uid="uid://dbdk5x30xx2t4" path="res://Assets/Icons/icons8-up-50.png" id="9_qi3vf"]
 [ext_resource type="Texture2D" uid="uid://m44t4aut6o62" path="res://Assets/Icons/icons8-arrow-right-50.png" id="10_ioybj"]
-[ext_resource type="Texture2D" uid="uid://b0bld73m5mimb" path="res://new folder/frame 1sd.png" id="13_b47np"]
+[ext_resource type="Texture2D" uid="uid://dw3j3n1yfj27w" path="res://new folder/frame 1sd.png" id="13_b47np"]
 [ext_resource type="PackedScene" uid="uid://puc4l62gx6et" path="res://Scenes/Prefabs/button_exit.tscn" id="14_b47np"]
 
 [sub_resource type="Animation" id="Animation_3cagf"]

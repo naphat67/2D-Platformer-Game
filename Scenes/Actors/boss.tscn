@@ -1,0 +1,55 @@
+[gd_scene format=3 uid="uid://3dif56sxeoyy"]
+
+[ext_resource type="PackedScene" uid="uid://d27bcsmx82vfa" path="res://Scenes/Actors/enemy.tscn" id="1_oysdo"]
+[ext_resource type="Script" uid="uid://c01gs8dk3kobk" path="res://Scenes/Actors/boss.gd" id="2_oysdo"]
+[ext_resource type="Texture2D" uid="uid://dl3jbm4iouiuv" path="res://new folder/aframe 1.png" id="3_oysdo"]
+[ext_resource type="Texture2D" uid="uid://pccf5q7degkf" path="res://new folder/aframe 2 (2).png" id="4_n7amw"]
+[ext_resource type="Texture2D" uid="uid://dc5acqvqfmkj5" path="res://new folder/aframe 3 (2).png" id="5_cmnph"]
+[ext_resource type="Texture2D" uid="uid://clt07iyod42o2" path="res://new folder/aframe 4 (2).png" id="6_75k84"]
+[ext_resource type="Texture2D" uid="uid://bun6d14nd8mq2" path="res://new folder/aframe 5 (2).png" id="7_rsild"]
+[ext_resource type="Texture2D" uid="uid://cpqldk6x70wly" path="res://new folder/aframe 6 (2).png" id="8_qq547"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_l7ctk"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("3_oysdo")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_n7amw")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_cmnph")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_75k84")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_rsild")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_qq547")
+}],
+"loop": 1,
+"name": &"Zombie_teacher",
+"speed": 5.0
+}]
+
+[node name="boss" unique_id=600502477 instance=ExtResource("1_oysdo")]
+script = ExtResource("2_oysdo")
+
+[node name="CollisionShape2D" parent="." index="0" unique_id=587424215]
+position = Vector2(0, -33)
+scale = Vector2(1.5, 1.5)
+
+[node name="CollisionShape2D2" parent="HitArea" parent_id_path=PackedInt32Array(1115411835) index="0" unique_id=2008793250]
+position = Vector2(0, -33)
+scale = Vector2(1.5, 1.5)
+
+[node name="AnimateSprite" type="AnimatedSprite2D" parent="Sprite" parent_id_path=PackedInt32Array(1445111960) index="0" unique_id=87960724]
+position = Vector2(3.8437343, -35.437496)
+scale = Vector2(0.095422715, 0.076249994)
+sprite_frames = SubResource("SpriteFrames_l7ctk")
+animation = &"Zombie_teacher"
+frame_progress = 0.3320798
+flip_h = true

@@ -1,0 +1,166 @@
+[gd_scene format=4 uid="uid://towe6jtciome"]
+
+[ext_resource type="PackedScene" uid="uid://bjntpxb1c8jxn" path="res://Scenes/Levels/base_level.tscn" id="1_r71vb"]
+[ext_resource type="PackedScene" uid="uid://darrnnrsriosd" path="res://Scenes/Levels/level_03.tscn" id="2_r71vb"]
+[ext_resource type="Texture2D" uid="uid://mdivj65mesjn" path="res://new folder/new_new_bg_wall.jpg" id="3_ekjuj"]
+[ext_resource type="TileSet" uid="uid://bvk6vx5i1riqd" path="res://Scenes/Prefabs/ground_tile_set.tres" id="3_rrj2r"]
+[ext_resource type="PackedScene" uid="uid://cb8e62red7kc0" path="res://Scenes/Prefabs/trap_1.tscn" id="4_bli80"]
+[ext_resource type="Texture2D" uid="uid://dlxn10pjcefcu" path="res://new folder/university_building.jpg" id="4_lgdv4"]
+[ext_resource type="Texture2D" uid="uid://dhyck30u4ywpy" path="res://new folder/new_new_bg_wall_4.jpg" id="5_3yipw"]
+[ext_resource type="PackedScene" uid="uid://bp4l1nlnh8oq1" path="res://Scenes/Prefabs/trap_2.tscn" id="5_ekjuj"]
+[ext_resource type="PackedScene" uid="uid://dabag2r57aued" path="res://Scenes/Prefabs/heal_potion.tscn" id="6_lgdv4"]
+[ext_resource type="Texture2D" uid="uid://mnfdj2yfpwe" path="res://new folder/new_new_bg_lift_4.jpg" id="6_qfrmt"]
+[ext_resource type="PackedScene" uid="uid://bfmh3fm2de78o" path="res://Scenes/Prefabs/coin.tscn" id="7_3yipw"]
+[ext_resource type="PackedScene" uid="uid://b48s52q3f64kl" path="res://Scenes/Actors/monster_mushroom.tscn" id="8_qfrmt"]
+[ext_resource type="Texture2D" uid="uid://gqsspx4po5ye" path="res://new folder/new_background.png" id="9_7dtio"]
+[ext_resource type="Texture2D" uid="uid://dj1iu8ekimnxw" path="res://new folder/new_background_glass.png" id="10_h33c7"]
+[ext_resource type="Texture2D" uid="uid://cfxmfwg36p060" path="res://new folder/new_background_floor4.png" id="11_mst0g"]
+[ext_resource type="Texture2D" uid="uid://sys3nj7rc5sr" path="res://new folder/new_background_lift_floor4.png" id="12_lcdi7"]
+
+[node name="BaseLevel" unique_id=1997201631 instance=ExtResource("1_r71vb")]
+
+[node name="LevelFinishDoor" parent="." index="0" unique_id=1788542095]
+z_index = -1
+position = Vector2(2754, 281)
+scale = Vector2(2, 2)
+next_scene = ExtResource("2_r71vb")
+
+[node name="NewNewBgWall" type="Sprite2D" parent="." index="1" unique_id=1379898343]
+position = Vector2(314, 262)
+scale = Vector2(0.544847, 0.5123256)
+texture = ExtResource("3_ekjuj")
+
+[node name="UniversityBuilding" type="Sprite2D" parent="." index="2" unique_id=1303247863]
+position = Vector2(1125.38, 245.39)
+scale = Vector2(0.29097384, 0.21014324)
+texture = ExtResource("4_lgdv4")
+
+[node name="NewNewBgWall4" type="Sprite2D" parent="." index="3" unique_id=538174132]
+position = Vector2(1939.5, 254.98001)
+scale = Vector2(0.28310043, 0.25433138)
+texture = ExtResource("5_3yipw")
+
+[node name="NewNewBgLift4" type="Sprite2D" parent="." index="4" unique_id=362384388]
+position = Vector2(2603, 253)
+scale = Vector2(0.27, 0.17)
+texture = ExtResource("6_qfrmt")
+metadata/_edit_lock_ = true
+
+[node name="Background1" parent="Level" parent_id_path=PackedInt32Array(1752500785) index="0" unique_id=1072429833]
+metadata/_edit_lock_ = true
+
+[node name="Ground" type="TileMapLayer" parent="Level" parent_id_path=PackedInt32Array(1752500785) index="1" unique_id=647673462]
+use_parent_material = true
+tile_map_data = PackedByteArray("AAANAAcAAAADAAEAAAAOAAcAAAADAAEAAAAPAAcAAAADAAEAAAAQAAcAAAADAAEAAAD//wYAAAADAAEAAAARAAcAAAADAAEAAAASAAcAAAADAAEAAAATAAcAAAADAAEAAAAUAAcAAAADAAEAAAAVAAcAAAADAAEAAAAWAAcAAAADAAEAAAAXAAcAAAADAAEAAAAMAAcAAAADAAEAAAALAAcAAAADAAEAAAAKAAcAAAADAAEAAAAJAAcAAAADAAEAAAAAAAYAAAADAAEAAAABAAYAAAADAAEAAAACAAYAAAADAAEAAAD+/wUAAAADAAEAAAD+/wYAAAADAAEAAAD+/wQAAAADAAEAAAD+/wMAAAADAAEAAAD+/wIAAAADAAEAAAD+/wEAAAADAAEAAAAIAAcAAAADAAEAAAAMAAYAAAADAAEAAAANAAYAAAADAAEAAAAOAAYAAAADAAEAAAAWAAYAAAADAAEAAAAXAAYAAAADAAEAAAD+/wcAAAADAAEAAAD//wcAAAADAAEAAAAAAAcAAAADAAEAAAABAAcAAAADAAEAAAACAAcAAAADAAEAAAADAAcAAAADAAEAAAAEAAcAAAADAAEAAAAFAAcAAAADAAEAAAAGAAcAAAADAAEAAAAHAAcAAAADAAEAAAAYAAcAAAADAAEAAAAZAAcAAAADAAEAAAAaAAcAAAADAAEAAAAbAAcAAAADAAEAAAAcAAcAAAADAAEAAAAdAAcAAAADAAEAAAAeAAcAAAADAAEAAAAfAAcAAAADAAEAAAAgAAcAAAADAAEAAAAhAAcAAAADAAEAAAAkAAcAAAADAAEAAAAlAAcAAAADAAEAAAAmAAcAAAADAAEAAAAnAAcAAAADAAEAAAAsAAcAAAADAAEAAAArAAcAAAADAAEAAAAqAAcAAAADAAEAAAApAAcAAAADAAEAAAAoAAcAAAADAAEAAAADAAYAAAADAAEAAAAEAAYAAAADAAEAAAAFAAYAAAADAAEAAAAGAAYAAAADAAEAAAAHAAYAAAADAAEAAAAIAAYAAAADAAEAAAAJAAYAAAADAAEAAAAKAAYAAAADAAEAAAALAAYAAAADAAEAAAAPAAYAAAADAAEAAAAQAAYAAAADAAEAAAARAAYAAAADAAEAAAASAAYAAAADAAEAAAATAAYAAAADAAEAAAAUAAYAAAADAAEAAAAVAAYAAAADAAEAAAAYAAYAAAADAAEAAAAZAAYAAAADAAEAAAAaAAYAAAADAAEAAAAbAAYAAAADAAEAAAAcAAYAAAADAAEAAAAdAAYAAAADAAEAAAAeAAYAAAADAAEAAAAfAAYAAAADAAEAAAAgAAYAAAADAAEAAAAhAAYAAAADAAEAAAAkAAYAAAADAAEAAAAlAAYAAAADAAEAAAAmAAYAAAADAAEAAAAnAAYAAAADAAEAAAAoAAYAAAADAAEAAAApAAYAAAADAAEAAAAqAAYAAAADAAEAAAArAAYAAAADAAEAAAAsAAYAAAADAAEAAAAtAAYAAAADAAEAAAAtAAcAAAADAAEAAAAtAAUAAAADAAEAAAAtAAQAAAADAAEAAAAtAAMAAAADAAEAAAAtAAIAAAADAAEAAAAtAAEAAAADAAEAAAAtAAAAAAADAAEAAAD+/wAAAAADAAEAAAD9/wAAAAADAAEAAAD9/wEAAAADAAEAAAD9/wIAAAADAAEAAAD9/wMAAAADAAEAAAD9/wQAAAADAAEAAAD9/wUAAAADAAEAAAD9/wYAAAADAAEAAAD9/wcAAAADAAEAAAD//wAAAAADAAMAAAD//wEAAAADAAMAAAAAAAAAAAADAAMAAAAAAAEAAAADAAMAAAABAAAAAAADAAMAAAABAAEAAAADAAMAAAACAAAAAAADAAMAAAACAAEAAAADAAMAAAADAAAAAAADAAMAAAADAAEAAAADAAMAAAAEAAAAAAADAAMAAAAEAAEAAAADAAMAAAAFAAAAAAADAAMAAAAFAAEAAAADAAMAAAAGAAAAAAADAAMAAAAGAAEAAAADAAMAAAAHAAAAAAADAAMAAAAHAAEAAAADAAMAAAAIAAAAAAADAAMAAAAIAAEAAAADAAMAAAAJAAAAAAADAAMAAAAJAAEAAAADAAMAAAAKAAAAAAADAAMAAAAKAAEAAAADAAMAAAALAAAAAAADAAMAAAALAAEAAAADAAMAAAAMAAAAAAADAAMAAAAMAAEAAAADAAMAAAANAAAAAAADAAMAAAANAAEAAAADAAMAAAAOAAAAAAADAAMAAAAOAAEAAAADAAMAAAAPAAAAAAADAAMAAAAPAAEAAAADAAMAAAAQAAAAAAADAAMAAAAQAAEAAAADAAMAAAARAAAAAAADAAMAAAARAAEAAAADAAMAAAASAAAAAAADAAMAAAASAAEAAAADAAMAAAATAAAAAAADAAMAAAATAAEAAAADAAMAAAAUAAAAAAADAAMAAAAUAAEAAAADAAMAAAAVAAAAAAADAAMAAAAVAAEAAAADAAMAAAAWAAAAAAADAAMAAAAWAAEAAAADAAMAAAAXAAAAAAADAAMAAAAXAAEAAAADAAMAAAAYAAAAAAADAAMAAAAYAAEAAAADAAMAAAAZAAAAAAADAAMAAAAZAAEAAAADAAMAAAAaAAAAAAADAAMAAAAaAAEAAAADAAMAAAAbAAAAAAADAAMAAAAbAAEAAAADAAMAAAAcAAAAAAADAAMAAAAcAAEAAAADAAMAAAAdAAAAAAADAAMAAAAdAAEAAAADAAMAAAAeAAAAAAADAAMAAAAeAAEAAAADAAMAAAAfAAAAAAADAAMAAAAfAAEAAAADAAMAAAAgAAAAAAADAAMAAAAgAAEAAAADAAMAAAAhAAAAAAADAAMAAAAhAAEAAAADAAMAAAAiAAAAAAADAAMAAAAiAAEAAAADAAMAAAAjAAAAAAADAAMAAAAjAAEAAAADAAMAAAAkAAAAAAADAAMAAAAkAAEAAAADAAMAAAAlAAAAAAADAAMAAAAlAAEAAAADAAMAAAAmAAAAAAADAAMAAAAmAAEAAAADAAMAAAAnAAAAAAADAAMAAAAnAAEAAAADAAMAAAAoAAAAAAADAAMAAAAoAAEAAAADAAMAAAApAAAAAAADAAMAAAApAAEAAAADAAMAAAAqAAAAAAADAAMAAAAqAAEAAAADAAMAAAArAAAAAAADAAMAAAArAAEAAAADAAMAAAAsAAAAAAADAAMAAAAsAAEAAAADAAMAAAAiAAcAAAADAAUAAAAjAAcAAAADAAUAAAAiAAYAAAADAAUAAAAjAAYAAAADAAUAAAA=")
+tile_set = ExtResource("3_rrj2r")
+
+[node name="Background2" parent="Level" parent_id_path=PackedInt32Array(1752500785) index="2" unique_id=1070008654]
+metadata/_edit_lock_ = true
+
+[node name="Trap1" parent="Level" parent_id_path=PackedInt32Array(1752500785) index="3" unique_id=242563240 instance=ExtResource("4_bli80")]
+z_index = 1
+position = Vector2(1531, 348)
+
+[node name="Trap3" parent="Level" parent_id_path=PackedInt32Array(1752500785) index="4" unique_id=1894763376 instance=ExtResource("5_ekjuj")]
+z_index = 1
+position = Vector2(669, 157)
+
+[node name="Trap4" parent="Level" parent_id_path=PackedInt32Array(1752500785) index="5" unique_id=1970758885 instance=ExtResource("5_ekjuj")]
+position = Vector2(1821, 167)
+rotation = 4.712389
+
+[node name="HealPotion" parent="Coins" parent_id_path=PackedInt32Array(1530662565) index="0" unique_id=1169891267 instance=ExtResource("6_lgdv4")]
+position = Vector2(2535, 316)
+
+[node name="Coin" parent="Coins" parent_id_path=PackedInt32Array(1530662565) index="1" unique_id=251510796 instance=ExtResource("7_3yipw")]
+position = Vector2(454.99997, 295.99997)
+rotation = 0.2617994
+
+[node name="Coin2" parent="Coins" parent_id_path=PackedInt32Array(1530662565) index="2" unique_id=959644230 instance=ExtResource("7_3yipw")]
+position = Vector2(455, 342)
+
+[node name="Coin3" parent="Coins" parent_id_path=PackedInt32Array(1530662565) index="3" unique_id=1453669841 instance=ExtResource("7_3yipw")]
+position = Vector2(881, 267)
+
+[node name="Coin4" parent="Coins" parent_id_path=PackedInt32Array(1530662565) index="4" unique_id=941174960 instance=ExtResource("7_3yipw")]
+position = Vector2(927, 267)
+
+[node name="Enemy3" parent="Enemies" parent_id_path=PackedInt32Array(1580630701) index="0" unique_id=265544775 instance=ExtResource("8_qfrmt")]
+position = Vector2(370, 383)
+scale = Vector2(1.5, 1.5)
+speed = 50.0
+
+[node name="Enemy4" parent="Enemies" parent_id_path=PackedInt32Array(1580630701) index="1" unique_id=600502477 instance=ExtResource("8_qfrmt")]
+z_index = 1
+position = Vector2(787, 389.00006)
+scale = Vector2(1.5, 1.5)
+speed = 50.0
+
+[node name="Enemy5" parent="Enemies" parent_id_path=PackedInt32Array(1580630701) index="2" unique_id=1942410680 instance=ExtResource("8_qfrmt")]
+z_index = 1
+position = Vector2(1265, 384)
+scale = Vector2(1.5, 1.5)
+speed = 50.0
+
+[node name="Enemy6" parent="Enemies" parent_id_path=PackedInt32Array(1580630701) index="3" unique_id=74982968 instance=ExtResource("8_qfrmt")]
+z_index = 1
+position = Vector2(1753, 374)
+scale = Vector2(1.5, 1.5)
+speed = 50.0
+
+[node name="Enemy7" parent="Enemies" parent_id_path=PackedInt32Array(1580630701) index="4" unique_id=368099796 instance=ExtResource("8_qfrmt")]
+z_index = 1
+position = Vector2(2614, 375)
+scale = Vector2(1.5, 1.5)
+speed = 50.0
+
+[node name="Label" parent="UserInterface" parent_id_path=PackedInt32Array(1799764374) index="1" unique_id=1103718868]
+offset_left = -99.0
+offset_top = -39.5
+offset_right = 99.0
+offset_bottom = 39.5
+theme_override_colors/font_color = Color(0.5529412, 0.38431373, 1, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 10
+text = "Level 4"
+horizontal_alignment = 1
+
+[node name="NewBackground" type="Sprite2D" parent="." index="12" unique_id=2015744380]
+visible = false
+z_index = -1
+position = Vector2(304.75024, 193.75)
+scale = Vector2(0.35278296, 0.18530273)
+texture = ExtResource("9_7dtio")
+metadata/_edit_lock_ = true
+
+[node name="NewBackground2" type="Sprite2D" parent="." index="13" unique_id=672245326]
+visible = false
+z_index = -1
+position = Vector2(1031, 191.99998)
+scale = Vector2(0.35344627, 0.18508148)
+texture = ExtResource("9_7dtio")
+metadata/_edit_lock_ = true
+
+[node name="NewBackgroundGlass" type="Sprite2D" parent="." index="14" unique_id=1585312106]
+visible = false
+z_index = -1
+position = Vector2(1753.0001, 190)
+scale = Vector2(0.36132813, 0.18750003)
+texture = ExtResource("10_h33c7")
+metadata/_edit_lock_ = true
+
+[node name="NewBackgroundFloor4" type="Sprite2D" parent="." index="15" unique_id=733405064]
+visible = false
+z_index = -1
+position = Vector2(2310, 190.5)
+scale = Vector2(0.18164063, 0.18701172)
+texture = ExtResource("11_mst0g")
+metadata/_edit_lock_ = true
+
+[node name="NewBackgroundLiftFloor4" type="Sprite2D" parent="." index="16" unique_id=1084780411]
+visible = false
+z_index = -1
+position = Vector2(2685.5, 193.5)
+scale = Vector2(0.1850586, 0.18798827)
+texture = ExtResource("12_lcdi7")
+metadata/_edit_lock_ = true
