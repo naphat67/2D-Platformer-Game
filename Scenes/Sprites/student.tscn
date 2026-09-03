@@ -157,26 +157,26 @@ tracks/11/keys = {
 tracks/12/type = "value"
 tracks/12/imported = false
 tracks/12/enabled = true
-tracks/12/path = NodePath("Skeleton2D/body/LLeg:position")
+tracks/12/path = NodePath("Skeleton2D/body/LLeg:rotation")
 tracks/12/interp = 1
 tracks/12/loop_wrap = true
 tracks/12/keys = {
 "times": PackedFloat32Array(0, 0.2, 1),
 "transitions": PackedFloat32Array(1, 1, 1),
 "update": 0,
-"values": [Vector2(-14, 15), Vector2(-14, 15), Vector2(-14, 15)]
+"values": [0.48306003, 1.0471976, 0.5235988]
 }
 tracks/13/type = "value"
 tracks/13/imported = false
 tracks/13/enabled = true
-tracks/13/path = NodePath("Skeleton2D/body/LLeg:rotation")
+tracks/13/path = NodePath("Skeleton2D/body/LLeg:position")
 tracks/13/interp = 1
 tracks/13/loop_wrap = true
 tracks/13/keys = {
 "times": PackedFloat32Array(0, 0.2, 1),
 "transitions": PackedFloat32Array(1, 1, 1),
 "update": 0,
-"values": [0.48306003, 1.0471976, 0.5235988]
+"values": [Vector2(-14, 15), Vector2(-14, 15), Vector2(-14, 15)]
 }
 
 [sub_resource type="Animation" id="Animation_jda5o"]
@@ -329,26 +329,26 @@ tracks/11/keys = {
 tracks/12/type = "value"
 tracks/12/imported = false
 tracks/12/enabled = true
-tracks/12/path = NodePath("Skeleton2D/body/LLeg:position")
+tracks/12/path = NodePath("Skeleton2D/body/LLeg:rotation")
 tracks/12/interp = 1
 tracks/12/loop_wrap = true
 tracks/12/keys = {
 "times": PackedFloat32Array(0, 1),
 "transitions": PackedFloat32Array(1, 1),
 "update": 0,
-"values": [Vector2(-14, 15), Vector2(-13.000001, 13)]
+"values": [0.0, 0.03377097]
 }
 tracks/13/type = "value"
 tracks/13/imported = false
 tracks/13/enabled = true
-tracks/13/path = NodePath("Skeleton2D/body/LLeg:rotation")
+tracks/13/path = NodePath("Skeleton2D/body/LLeg:position")
 tracks/13/interp = 1
 tracks/13/loop_wrap = true
 tracks/13/keys = {
 "times": PackedFloat32Array(0, 1),
 "transitions": PackedFloat32Array(1, 1),
 "update": 0,
-"values": [0.0, 0.03377097]
+"values": [Vector2(-14, 15), Vector2(-13.000001, 13)]
 }
 
 [sub_resource type="Animation" id="Animation_kxbhp"]
@@ -502,26 +502,26 @@ tracks/11/keys = {
 tracks/12/type = "value"
 tracks/12/imported = false
 tracks/12/enabled = true
-tracks/12/path = NodePath("Skeleton2D/body/LLeg:position")
+tracks/12/path = NodePath("Skeleton2D/body/LLeg:rotation")
 tracks/12/interp = 1
 tracks/12/loop_wrap = true
 tracks/12/keys = {
 "times": PackedFloat32Array(0, 0.5),
 "transitions": PackedFloat32Array(1, 1),
 "update": 0,
-"values": [Vector2(-14, 15), Vector2(-1.5454006, 11.98381)]
+"values": [0.48306003, -0.90360725]
 }
 tracks/13/type = "value"
 tracks/13/imported = false
 tracks/13/enabled = true
-tracks/13/path = NodePath("Skeleton2D/body/LLeg:rotation")
+tracks/13/path = NodePath("Skeleton2D/body/LLeg:position")
 tracks/13/interp = 1
 tracks/13/loop_wrap = true
 tracks/13/keys = {
 "times": PackedFloat32Array(0, 0.5),
 "transitions": PackedFloat32Array(1, 1),
 "update": 0,
-"values": [0.48306003, -0.90360725]
+"values": [Vector2(-14, 15), Vector2(-1.5454006, 11.98381)]
 }
 
 [sub_resource type="Animation" id="Animation_wl5id"]
@@ -673,26 +673,26 @@ tracks/11/keys = {
 tracks/12/type = "value"
 tracks/12/imported = false
 tracks/12/enabled = true
-tracks/12/path = NodePath("Skeleton2D/body/LLeg:position")
+tracks/12/path = NodePath("Skeleton2D/body/LLeg:rotation")
 tracks/12/interp = 1
 tracks/12/loop_wrap = true
 tracks/12/keys = {
 "times": PackedFloat32Array(0),
 "transitions": PackedFloat32Array(1),
 "update": 0,
-"values": [Vector2(-14, 15)]
+"values": [0.0]
 }
 tracks/13/type = "value"
 tracks/13/imported = false
 tracks/13/enabled = true
-tracks/13/path = NodePath("Skeleton2D/body/LLeg:rotation")
+tracks/13/path = NodePath("Skeleton2D/body/LLeg:position")
 tracks/13/interp = 1
 tracks/13/loop_wrap = true
 tracks/13/keys = {
 "times": PackedFloat32Array(0),
 "transitions": PackedFloat32Array(1),
 "update": 0,
-"values": [0.0]
+"values": [Vector2(-14, 15)]
 }
 
 [sub_resource type="Animation" id="Animation_lascq"]
@@ -846,26 +846,26 @@ tracks/11/keys = {
 tracks/12/type = "value"
 tracks/12/imported = false
 tracks/12/enabled = true
-tracks/12/path = NodePath("Skeleton2D/body/LLeg:position")
+tracks/12/path = NodePath("Skeleton2D/body/LLeg:rotation")
 tracks/12/interp = 1
 tracks/12/loop_wrap = true
 tracks/12/keys = {
 "times": PackedFloat32Array(0, 0.5),
 "transitions": PackedFloat32Array(1, 1),
 "update": 0,
-"values": [Vector2(-14, 15), Vector2(8.77168, 14.664842)]
+"values": [0.48306003, -0.879079]
 }
 tracks/13/type = "value"
 tracks/13/imported = false
 tracks/13/enabled = true
-tracks/13/path = NodePath("Skeleton2D/body/LLeg:rotation")
+tracks/13/path = NodePath("Skeleton2D/body/LLeg:position")
 tracks/13/interp = 1
 tracks/13/loop_wrap = true
 tracks/13/keys = {
 "times": PackedFloat32Array(0, 0.5),
 "transitions": PackedFloat32Array(1, 1),
 "update": 0,
-"values": [0.48306003, -0.879079]
+"values": [Vector2(-14, 15), Vector2(8.77168, 14.664842)]
 }
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_lascq"]
