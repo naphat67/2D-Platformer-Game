@@ -78,7 +78,7 @@ test
 
 **Level Assets**
 
-![School Hallway Assets](docs/level_assets.png)
+![School Hallway Assets](new folder/Screenshot 2026-09-03 122552.png)
 
 **เกมที่คล้ายกัน**: Contra
 
