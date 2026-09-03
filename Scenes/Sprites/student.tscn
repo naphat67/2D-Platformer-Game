@@ -2,7 +2,7 @@
 
 [ext_resource type="Texture2D" uid="uid://qmmh01jce6as" path="res://new folder/L leg.png" id="1_clr1l"]
 [ext_resource type="Texture2D" uid="uid://bw615kqrbexps" path="res://new folder/L arm.png" id="1_w1wrk"]
-[ext_resource type="Texture2D" uid="uid://b0bld73m5mimb" path="res://new folder/frame 1sd.png" id="1_wouam"]
+[ext_resource type="Texture2D" uid="uid://dw3j3n1yfj27w" path="res://new folder/frame 1sd.png" id="1_wouam"]
 [ext_resource type="Texture2D" uid="uid://dybvqflwr8rjw" path="res://new folder/head.png" id="2_2pg73"]
 [ext_resource type="Texture2D" uid="uid://c8cp42sjhpmmn" path="res://new folder/body.png" id="3_hu4dm"]
 [ext_resource type="Texture2D" uid="uid://ckhh77gwhcnk5" path="res://new folder/R arm.png" id="5_clr1l"]
@@ -900,6 +900,9 @@ rest = Transform2D(1, 0, 0, 1, -2, -32)
 [node name="head2" type="Bone2D" parent="Skeleton2D/body/head" unique_id=2126738367]
 position = Vector2(0, -52)
 rest = Transform2D(1, 0, 0, 1, 0, -52)
+auto_calculate_length_and_angle = false
+length = 16.0
+bone_angle = 0.0
 
 [node name="head" type="Sprite2D" parent="Skeleton2D/body/head/head2" unique_id=1722090937]
 position = Vector2(57.000023, 144.00003)
@@ -910,6 +913,9 @@ texture = ExtResource("2_2pg73")
 position = Vector2(11, -16)
 scale = Vector2(0.99999934, 0.99999934)
 rest = Transform2D(1, 0, 0, 1, 11, -16)
+auto_calculate_length_and_angle = false
+length = 16.0
+bone_angle = 0.0
 
 [node name="LArm" type="Sprite2D" parent="Skeleton2D/body/LArm" unique_id=1904206790]
 z_index = -1
@@ -927,6 +933,9 @@ texture = ExtResource("1_wouam")
 [node name="RArm" type="Bone2D" parent="Skeleton2D/body" unique_id=208622858]
 position = Vector2(-13, -18)
 rest = Transform2D(1, 0, 0, 1, -13, -18)
+auto_calculate_length_and_angle = false
+length = 16.0
+bone_angle = 0.0
 
 [node name="RArm" type="Sprite2D" parent="Skeleton2D/body/RArm" unique_id=1252672624]
 position = Vector2(53.000004, -3.0000076)
@@ -937,6 +946,9 @@ texture = ExtResource("5_clr1l")
 position = Vector2(4, 14)
 scale = Vector2(0.99999964, 0.99999964)
 rest = Transform2D(1, 0, 0, 1, 4, 14)
+auto_calculate_length_and_angle = false
+length = 16.0
+bone_angle = 0.0
 
 [node name="LLeg2" type="Sprite2D" parent="Skeleton2D/body/RLeg" unique_id=701260382]
 z_index = -1
@@ -949,6 +961,9 @@ offset = Vector2(-41.57562, -130.91763)
 [node name="LLeg" type="Bone2D" parent="Skeleton2D/body" unique_id=694126583]
 position = Vector2(-14, 15)
 rest = Transform2D(1, 0, 0, 1, -14, 15)
+auto_calculate_length_and_angle = false
+length = 16.0
+bone_angle = 0.0
 
 [node name="RLeg" type="Sprite2D" parent="Skeleton2D/body/LLeg" unique_id=1873631634]
 z_index = -1
